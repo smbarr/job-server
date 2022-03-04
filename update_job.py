@@ -19,7 +19,10 @@ def send_msg(msg):
   s.close()
 
 ## This dictionary can have some case-specific data
+## It just needs to have the run_num, so that the server
+## knows which job it is coming from
 data{
+  "run_num": 1,
   "value": 1.0
 }
 send_msg(data)
